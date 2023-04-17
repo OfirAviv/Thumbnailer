@@ -6,6 +6,7 @@ services:
     command: sleep inf
     volumes:
       - m2repo:/root/.m2/repository
+      - .:/tn                       # io-extentions = mvn install | app = mvn verify
 
 
 
